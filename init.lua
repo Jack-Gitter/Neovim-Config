@@ -1,3 +1,5 @@
 require('packer-plugins')
 require('cmp')
 require('lsp')
+vim.api.nvim_set_keymap('i', 'kj', '<Esc>', {})
+vim.api.nvim_set_keymap('i', 'jk', '<ESC>', {}) 
