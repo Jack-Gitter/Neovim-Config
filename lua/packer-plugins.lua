@@ -16,4 +16,8 @@ return require('packer').startup(function()
 	-- lsp plugins
 	use 'neovim/nvim-lspconfig'
 	use 'williamboman/nvim-lsp-installer'
-end) 
+	-- git plugin 
+	use {'tanvirtin/vgit.nvim',requires = {'nvim-lua/plenary.nvim'}
+}
+end)
+
