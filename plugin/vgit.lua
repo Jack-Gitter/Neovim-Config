@@ -1,4 +1,4 @@
-local vgit = require('vgit')
+--[[local vgit = require('vgit')
 vgit.setup({
   keymaps = {
     ['n <C-k>'] = 'hunk_up',
@@ -210,5 +210,4 @@ vgit.setup({
       void = '⣿',
     },
   }
-})
-
+})--]]

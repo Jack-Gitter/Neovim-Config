@@ -17,9 +17,11 @@ return require('packer').startup(function()
 	use 'neovim/nvim-lspconfig'
 	use 'williamboman/nvim-lsp-installer'
 	-- git plugin 
-	use {'tanvirtin/vgit.nvim',requires = {'nvim-lua/plenary.nvim'}}
+--	use {'tanvirtin/vgit.nvim',requires = {'nvim-lua/plenary.nvim'}}
 	-- telescope plugin
 	use {'nvim-telescope/telescope.nvim', tag = '0.1.0',
 	requires = { {'nvim-lua/plenary.nvim'}}}
+	use 'psliwka/vim-smoothie'
+	
 end)
 
