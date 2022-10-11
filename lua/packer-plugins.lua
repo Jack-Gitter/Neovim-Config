@@ -3,6 +3,8 @@ return require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 	-- color theme for nvim
 	use 'gruvbox-community/gruvbox'
+	use 'savq/melange'
+	use 'Mofiqul/dracula.nvim'
 	-- pairs parentheticals automatically
 	use 'windwp/nvim-autopairs'
 	-- auto completion plugins 
@@ -24,5 +26,9 @@ return require('packer').startup(function()
 	use 'psliwka/vim-smoothie'
 	use 'kdheepak/lazygit.nvim'
 	
+	use {
+		'nvim-lualine/lualine.nvim',
+		requires = { 'kyazdani42/nvim-web-devicons', opt=true}
+	}
 end)
 
