@@ -5,6 +5,7 @@ return require('packer').startup(function()
 	use 'gruvbox-community/gruvbox'
 	use 'savq/melange'
 	use 'Mofiqul/dracula.nvim'
+	use 'aktersnurra/no-clown-fiesta.nvim'
 	-- pairs parentheticals automatically
 	use 'windwp/nvim-autopairs'
 	-- auto completion plugins 
@@ -25,7 +26,7 @@ return require('packer').startup(function()
 	requires = { {'nvim-lua/plenary.nvim'}}}
 	use 'psliwka/vim-smoothie'
 	use 'kdheepak/lazygit.nvim'
-	
+        use 'ggandor/lightspeed.nvim'	
 	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'kyazdani42/nvim-web-devicons', opt=true}
