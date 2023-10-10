@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   use 'mhartington/formatter.nvim'
   use 'karb94/neoscroll.nvim'
   use 'ggandor/lightspeed.nvim'
+  use 'voldikss/vim-floaterm'
   use {'ggandor/leap.nvim', requires = {{'tpope/vim-repeat'}}}
   use {
     'williamboman/mason.nvim',
