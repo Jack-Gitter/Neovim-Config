@@ -24,6 +24,9 @@ return require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use 'rafamadriz/friendly-snippets'
   use 'mhartington/formatter.nvim'
+  use 'karb94/neoscroll.nvim'
+  use 'ggandor/lightspeed.nvim'
+  use {'ggandor/leap.nvim', requires = {{'tpope/vim-repeat'}}}
   use {
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
