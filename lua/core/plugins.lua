@@ -41,10 +41,16 @@ return require('packer').startup(function(use)
   'nvim-telescope/telescope.nvim', tag = '0.1.3',
   requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use {
+  "microsoft/vscode-js-debug",
+  opt = true,
+  run = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
+  }
 
   use 'mfussenegger/nvim-dap'
   use 'leoluz/nvim-dap-go'
   use 'rcarriga/nvim-dap-ui'
+  use 'mxsdev/nvim-dap-vscode-js'
   use 'theHamsta/nvim-dap-virtual-text'
 
   if packer_bootstrap then
