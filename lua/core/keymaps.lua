@@ -13,5 +13,5 @@ vim.opt.updatetime = 50
 vim.keymap.set('i', 'jk', '<Esc>')
 vim.keymap.set('i', 'kj', '<Esc>')
 vim.keymap.set('n', 'git', ':FloatermNew LazyGit<CR>')
-vim.keymap.set('n', 'winl', ':wincmd h<CR>')
-vim.keymap.set('n', 'winr', ':wincmd l<CR>')
+vim.keymap.set('n', 'winj', ':wincmd h<CR>')
+vim.keymap.set('n', 'winl', ':wincmd l<CR>')
