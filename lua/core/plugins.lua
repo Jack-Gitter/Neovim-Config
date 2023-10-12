@@ -36,11 +36,7 @@ return require('packer').startup(function(use)
     "rshkarin/mason-nvim-lint",
     'neovim/nvim-lspconfig'
   }
-  use 'mfussenegger/nvim-dap'
-  use "jay-babu/mason-nvim-dap.nvim"
-  use 'folke/neodev.nvim'
   use 'numToStr/Comment.nvim'
-  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
   use {
   'nvim-telescope/telescope.nvim', tag = '0.1.3',
   requires = { {'nvim-lua/plenary.nvim'} }
