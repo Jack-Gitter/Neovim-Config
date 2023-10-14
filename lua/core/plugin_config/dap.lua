@@ -1,4 +1,5 @@
 require("dapui").setup()
+require("nvim-dap-virtual-text").setup()
 local dap, dapui = require("dap"), require("dapui")
 dap.listeners.after.event_initialized["dapui_config"] = function()
   dapui.open()
@@ -27,12 +28,6 @@ for _, language in ipairs({ "typescript", "javascript" }) do
     request = "launch",
     name = "Launch file",
     program = "${file}",
-    cwd = "${workspaceFolder}",
-  },
-  {
-    type = "pwa-node",
-    request = "attach",
-    name = "Attach",
     cwd = "${workspaceFolder}",
   },
   {

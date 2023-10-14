@@ -45,6 +45,7 @@ return require('packer').startup(function(use)
     "rshkarin/mason-nvim-lint",
     'neovim/nvim-lspconfig'
   }
+  use 'simrat39/rust-tools.nvim'
   use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
   use 'numToStr/Comment.nvim'
   use {
